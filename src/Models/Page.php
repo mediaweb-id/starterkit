@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Models;
+namespace MediaWebId\Starterkit\Models;
 
 use App\Traits\GetSet;
 use Illuminate\Database\Eloquent\Model;

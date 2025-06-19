@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Middleware;
+namespace MediaWebId\Starterkit\Http\Middleware;
 
 use Closure;
 use Spatie\Permission\Exceptions\UnauthorizedException;

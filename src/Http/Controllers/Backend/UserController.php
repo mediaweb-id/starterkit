@@ -1,14 +1,14 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Controllers\Backend;
+namespace MediaWebId\Starterkit\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use AcitJazz\Starterkit\Http\Requests\User\UpdateUserRequest;
-use AcitJazz\Starterkit\Http\Requests\User\UserPasswordRequest;
-use AcitJazz\Starterkit\Http\Requests\User\UserRequest;
-use AcitJazz\Starterkit\Http\Resources\Backend\UserResource;
-use AcitJazz\Starterkit\Models\User;
-use Facades\AcitJazz\Starterkit\Http\Repositories\UserRepository;
+use MediaWebId\Starterkit\Http\Requests\User\UpdateUserRequest;
+use MediaWebId\Starterkit\Http\Requests\User\UserPasswordRequest;
+use MediaWebId\Starterkit\Http\Requests\User\UserRequest;
+use MediaWebId\Starterkit\Http\Resources\Backend\UserResource;
+use MediaWebId\Starterkit\Models\User;
+use Facades\MediaWebId\Starterkit\Http\Repositories\UserRepository;
 use Illuminate\Support\Facades\Cache;
 use Inertia\Inertia;
 

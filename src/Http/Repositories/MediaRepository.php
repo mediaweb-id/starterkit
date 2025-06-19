@@ -1,8 +1,8 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Repositories;
+namespace MediaWebId\Starterkit\Http\Repositories;
 
-use AcitJazz\Starterkit\Models\Media;
+use MediaWebId\Starterkit\Models\Media;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 

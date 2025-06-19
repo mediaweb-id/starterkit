@@ -1,8 +1,8 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Resources\Frontend;
+namespace MediaWebId\Starterkit\Http\Resources\Frontend;
 
-use AcitJazz\Starterkit\Http\Resources\BaseResource;
+use MediaWebId\Starterkit\Http\Resources\BaseResource;
 
 class UserResource extends BaseResource
 {

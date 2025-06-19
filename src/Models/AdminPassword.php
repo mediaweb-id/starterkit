@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Models;
+namespace MediaWebId\Starterkit\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

@@ -2,7 +2,7 @@
 
 namespace App\Http\Resources\Frontend\Section;
 
-use AcitJazz\Starterkit\Http\Resources\BaseResource;
+use MediaWebId\Starterkit\Http\Resources\BaseResource;
 
 class InputModelResource extends BaseResource
 {

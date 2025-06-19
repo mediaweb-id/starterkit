@@ -1,5 +1,5 @@
 <?php
 
-namespace AcitJazz\Starterkit;
+namespace MediaWebId\Starterkit;
 
 class Starterkit {}

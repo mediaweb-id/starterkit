@@ -6,7 +6,7 @@ use Illuminate\Foundation\Inspiring;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 use Tighten\Ziggy\Ziggy;
-use Facades\AcitJazz\MainMenu\Http\Repositories\MenuRepository;
+use Facades\MediaWebId\MainMenu\Http\Repositories\MenuRepository;
 
 class HandleInertiaRequests extends Middleware
 {
@@ -45,7 +45,7 @@ class HandleInertiaRequests extends Middleware
     {
         [$message, $author] = str(Inspiring::quotes()->random())->explode('-');
         $user = auth('admin')->user() ?? auth()->user();
-        $menus = class_exists(\AcitJazz\MainMenu\Http\Repositories\MenuRepository::class)
+        $menus = class_exists(\MediaWebId\MainMenu\Http\Repositories\MenuRepository::class)
         ? MenuRepository::getByLocation('Header')
         : [];
         return [

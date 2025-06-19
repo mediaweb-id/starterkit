@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\QueryFilters;
+namespace MediaWebId\Starterkit\QueryFilters;
 use Illuminate\Support\Str;
 use Closure;
 

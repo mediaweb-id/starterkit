@@ -1,12 +1,12 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Controllers\Backend;
+namespace MediaWebId\Starterkit\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use AcitJazz\Starterkit\Http\Requests\Page\PageRequest;
-use AcitJazz\Starterkit\Http\Resources\Backend\PageResource;
-use AcitJazz\Starterkit\Models\Page;
-use Facades\AcitJazz\Starterkit\Http\Repositories\PageRepository;
+use MediaWebId\Starterkit\Http\Requests\Page\PageRequest;
+use MediaWebId\Starterkit\Http\Resources\Backend\PageResource;
+use MediaWebId\Starterkit\Models\Page;
+use Facades\MediaWebId\Starterkit\Http\Repositories\PageRepository;
 use Illuminate\Support\Facades\Cache;
 use Inertia\Inertia;
 

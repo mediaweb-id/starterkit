@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Commands;
+namespace MediaWebId\Starterkit\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
@@ -27,13 +27,13 @@ class StarterkitCommand extends Command
 
     protected function publishModels()
     {
-        $source = base_path('vendor/acitjazz/starterkit/src/Models');
+        $source = base_path('vendor/mediawebid/starterkit/src/Models');
         $destination = app_path('Models');
         File::copyDirectory($source, $destination);
 
         foreach (File::allFiles($destination) as $file) {
             $contents = File::get($file->getPathname());
-            $updated = str_replace('namespace AcitJazz\Starterkit\Models;', 'namespace App\Models;', $contents);
+            $updated = str_replace('namespace MediaWebId\Starterkit\Models;', 'namespace App\Models;', $contents);
             File::put($file->getPathname(), $updated);
         }
 
@@ -42,13 +42,13 @@ class StarterkitCommand extends Command
 
     protected function publishTraits()
     {
-        $source = base_path('vendor/acitjazz/starterkit/src/Traits');
+        $source = base_path('vendor/mediawebid/starterkit/src/Traits');
         $destination = app_path('Traits');
         File::copyDirectory($source, $destination);
 
         foreach (File::allFiles($destination) as $file) {
             $contents = File::get($file->getPathname());
-            $updated = str_replace(['namespace AcitJazz\Starterkit', 'use AcitJazz\Starterkit'], ['namespace App', 'use App'], $contents);
+            $updated = str_replace(['namespace MediaWebId\Starterkit', 'use MediaWebId\Starterkit'], ['namespace App', 'use App'], $contents);
             File::put($file->getPathname(), $updated);
         }
 
@@ -57,13 +57,13 @@ class StarterkitCommand extends Command
 
     protected function publishQueryFilters()
     {
-        $source = base_path('vendor/acitjazz/starterkit/src/QueryFilters');
+        $source = base_path('vendor/mediawebid/starterkit/src/QueryFilters');
         $destination = app_path('QueryFilters');
         File::copyDirectory($source, $destination);
 
         foreach (File::allFiles($destination) as $file) {
             $contents = File::get($file->getPathname());
-            $updated = str_replace(['namespace AcitJazz\Starterkit', 'use AcitJazz\Starterkit'], ['namespace App', 'use App'], $contents);
+            $updated = str_replace(['namespace MediaWebId\Starterkit', 'use MediaWebId\Starterkit'], ['namespace App', 'use App'], $contents);
             File::put($file->getPathname(), $updated);
         }
 
@@ -72,13 +72,13 @@ class StarterkitCommand extends Command
 
     protected function publishRules()
     {
-        $source = base_path('vendor/acitjazz/starterkit/src/Rules');
+        $source = base_path('vendor/mediawebid/starterkit/src/Rules');
         $destination = app_path('Rules');
         File::copyDirectory($source, $destination);
 
         foreach (File::allFiles($destination) as $file) {
             $contents = File::get($file->getPathname());
-            $updated = str_replace(['namespace AcitJazz\Starterkit', 'use AcitJazz\Starterkit'], ['namespace App', 'use App'], $contents);
+            $updated = str_replace(['namespace MediaWebId\Starterkit', 'use MediaWebId\Starterkit'], ['namespace App', 'use App'], $contents);
             File::put($file->getPathname(), $updated);
         }
 
@@ -88,7 +88,7 @@ class StarterkitCommand extends Command
 
     protected function publishRoutes()
     {
-        $source = base_path('vendor/acitjazz/starterkit/routes');
+        $source = base_path('vendor/mediawebid/starterkit/routes');
         $destination = base_path('routes');
         File::copyDirectory($source, $destination);
 
@@ -96,7 +96,7 @@ class StarterkitCommand extends Command
             if ($file->getFilename() === 'backend.php') {
                 $contents = File::get($file->getPathname());
                 $updated = str_replace(
-                    'use AcitJazz\Starterkit\Http\Controllers',
+                    'use MediaWebId\Starterkit\Http\Controllers',
                     'use App\Http\Controllers',
                     $contents
                 );
@@ -109,13 +109,13 @@ class StarterkitCommand extends Command
 
     protected function publishSeeders()
     {
-        $source = base_path('vendor/acitjazz/starterkit/database/seeders');
+        $source = base_path('vendor/mediawebid/starterkit/database/seeders');
         $destination = base_path('database/seeders');
         File::copyDirectory($source, $destination);
 
         foreach (File::allFiles($destination) as $file) {
             $contents = File::get($file->getPathname());
-            $updated = str_replace('use AcitJazz\Starterkit', 'use App', $contents);
+            $updated = str_replace('use MediaWebId\Starterkit', 'use App', $contents);
             File::put($file->getPathname(), $updated);
         }
 
@@ -124,13 +124,13 @@ class StarterkitCommand extends Command
 
     protected function publishHttp()
     {
-        $source = base_path('vendor/acitjazz/starterkit/src/Http');
+        $source = base_path('vendor/mediawebid/starterkit/src/Http');
         $destination = app_path('Http');
         File::copyDirectory($source, $destination);
 
         foreach (File::allFiles($destination) as $file) {
             $contents = File::get($file->getPathname());
-            $updated = str_replace(['namespace AcitJazz\Starterkit', 'use AcitJazz\Starterkit'], ['namespace App', 'use App'], $contents);
+            $updated = str_replace(['namespace MediaWebId\Starterkit', 'use MediaWebId\Starterkit'], ['namespace App', 'use App'], $contents);
             File::put($file->getPathname(), $updated);
         }
 

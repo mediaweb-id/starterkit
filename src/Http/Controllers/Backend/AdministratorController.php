@@ -1,17 +1,17 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Controllers\Backend;
+namespace MediaWebId\Starterkit\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use AcitJazz\Starterkit\Http\Requests\Administrator\AdministratorRequest;
-use AcitJazz\Starterkit\Http\Requests\Administrator\AdministratorRolePermissionRequest;
-use AcitJazz\Starterkit\Http\Requests\Administrator\AdministratorUpdatePasswordRequest;
-use AcitJazz\Starterkit\Http\Requests\Administrator\AdministratorUpdateRequest;
-use AcitJazz\Starterkit\Http\Resources\Backend\AdministratorResource;
-use AcitJazz\Starterkit\Models\Admin;
-use AcitJazz\Starterkit\Models\AdminPassword;
+use MediaWebId\Starterkit\Http\Requests\Administrator\AdministratorRequest;
+use MediaWebId\Starterkit\Http\Requests\Administrator\AdministratorRolePermissionRequest;
+use MediaWebId\Starterkit\Http\Requests\Administrator\AdministratorUpdatePasswordRequest;
+use MediaWebId\Starterkit\Http\Requests\Administrator\AdministratorUpdateRequest;
+use MediaWebId\Starterkit\Http\Resources\Backend\AdministratorResource;
+use MediaWebId\Starterkit\Models\Admin;
+use MediaWebId\Starterkit\Models\AdminPassword;
 use Carbon\Carbon;
-use Facades\AcitJazz\Starterkit\Http\Repositories\AdministratorRepository;
+use Facades\MediaWebId\Starterkit\Http\Repositories\AdministratorRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Hash;

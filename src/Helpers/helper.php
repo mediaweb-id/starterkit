@@ -1,7 +1,7 @@
 <?php
 
-use AcitJazz\Starterkit\Http\Resources\Backend\MediaResource;
-use AcitJazz\Starterkit\Models\Media;
+use MediaWebId\Starterkit\Http\Resources\Backend\MediaResource;
+use MediaWebId\Starterkit\Models\Media;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;

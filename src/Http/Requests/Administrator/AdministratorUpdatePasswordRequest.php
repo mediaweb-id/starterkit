@@ -1,9 +1,9 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Requests\Administrator;
+namespace MediaWebId\Starterkit\Http\Requests\Administrator;
 
-use AcitJazz\Starterkit\Models\Admin;
-use AcitJazz\Starterkit\Rules\PasswordHistoryRule;
+use MediaWebId\Starterkit\Models\Admin;
+use MediaWebId\Starterkit\Rules\PasswordHistoryRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Password;
 

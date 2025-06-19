@@ -1,15 +1,15 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Resources\Frontend;
+namespace MediaWebId\Starterkit\Http\Resources\Frontend;
 
-use AcitJazz\Starterkit\Http\Resources\BaseResource;
-use AcitJazz\Starterkit\Http\Resources\Frontend\Section\InputBannersResource;
-use AcitJazz\Starterkit\Http\Resources\Frontend\Section\InputCallToActionResource;
-use AcitJazz\Starterkit\Http\Resources\Frontend\Section\InputCardSliderResource;
-use AcitJazz\Starterkit\Http\Resources\Frontend\Section\InputLatestNewsResource;
-use AcitJazz\Starterkit\Http\Resources\Frontend\Section\InputProductFeaturesResource;
-use AcitJazz\Starterkit\Http\Resources\Frontend\Section\InputProductCarouselResource;
-use AcitJazz\Starterkit\Http\Resources\Frontend\Section\InputModelResource;
+use MediaWebId\Starterkit\Http\Resources\BaseResource;
+use MediaWebId\Starterkit\Http\Resources\Frontend\Section\InputBannersResource;
+use MediaWebId\Starterkit\Http\Resources\Frontend\Section\InputCallToActionResource;
+use MediaWebId\Starterkit\Http\Resources\Frontend\Section\InputCardSliderResource;
+use MediaWebId\Starterkit\Http\Resources\Frontend\Section\InputLatestNewsResource;
+use MediaWebId\Starterkit\Http\Resources\Frontend\Section\InputProductFeaturesResource;
+use MediaWebId\Starterkit\Http\Resources\Frontend\Section\InputProductCarouselResource;
+use MediaWebId\Starterkit\Http\Resources\Frontend\Section\InputModelResource;
 
 class SectionResource extends BaseResource
 {

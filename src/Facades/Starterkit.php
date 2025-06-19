@@ -1,16 +1,16 @@
 <?php
 
-namespace AcitJazz\Starterkit\Facades;
+namespace MediaWebId\Starterkit\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \AcitJazz\Starterkit\Starterkit
+ * @see \MediaWebId\Starterkit\Starterkit
  */
 class Starterkit extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \AcitJazz\Starterkit\Starterkit::class;
+        return \MediaWebId\Starterkit\Starterkit::class;
     }
 }

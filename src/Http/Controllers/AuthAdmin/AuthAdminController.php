@@ -1,10 +1,10 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Controllers\AuthAdmin;
+namespace MediaWebId\Starterkit\Http\Controllers\AuthAdmin;
 
 
 use Illuminate\Http\RedirectResponse;
-use AcitJazz\Starterkit\Http\Requests\Auth\LoginRequest;
+use MediaWebId\Starterkit\Http\Requests\Auth\LoginRequest;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;

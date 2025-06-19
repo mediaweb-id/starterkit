@@ -1,8 +1,8 @@
 <?php
 
-namespace AcitJazz\Starterkit\Traits;
+namespace MediaWebId\Starterkit\Traits;
 
-use AcitJazz\Starterkit\Http\Resources\Backend\SetSectionResource;
+use MediaWebId\Starterkit\Http\Resources\Backend\SetSectionResource;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 

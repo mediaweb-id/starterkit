@@ -1,13 +1,13 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Controllers\Backend;
+namespace MediaWebId\Starterkit\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use AcitJazz\Starterkit\Http\Requests\Media\MediaRequest;
-use AcitJazz\Starterkit\Http\Resources\Backend\MediaResource;
-use AcitJazz\Starterkit\Models\Media;
+use MediaWebId\Starterkit\Http\Requests\Media\MediaRequest;
+use MediaWebId\Starterkit\Http\Resources\Backend\MediaResource;
+use MediaWebId\Starterkit\Models\Media;
 use Carbon\Carbon;
-use Facades\AcitJazz\Starterkit\Http\Repositories\MediaRepository;
+use Facades\MediaWebId\Starterkit\Http\Repositories\MediaRepository;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;

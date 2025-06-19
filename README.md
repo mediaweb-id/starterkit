@@ -25,7 +25,7 @@ cd demoproject
 and Run 
 
 ```bash
-composer require acitjazz/starterkit
+composer require mediaweb-id/starterkit
 ```
 
 ```bash

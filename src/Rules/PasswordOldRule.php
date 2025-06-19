@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Rules;
+namespace MediaWebId\Starterkit\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

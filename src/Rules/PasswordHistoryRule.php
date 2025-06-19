@@ -1,8 +1,8 @@
 <?php
 
-namespace AcitJazz\Starterkit\Rules;
+namespace MediaWebId\Starterkit\Rules;
 
-use AcitJazz\Starterkit\Models\AdminPassword;
+use MediaWebId\Starterkit\Models\AdminPassword;
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Support\Facades\Hash;

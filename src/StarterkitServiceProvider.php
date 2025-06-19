@@ -1,10 +1,10 @@
 <?php
 
-namespace AcitJazz\Starterkit;
+namespace MediaWebId\Starterkit;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AcitJazz\Starterkit\Commands\StarterkitCommand;
+use MediaWebId\Starterkit\Commands\StarterkitCommand;
 
 class StarterkitServiceProvider extends PackageServiceProvider
 {

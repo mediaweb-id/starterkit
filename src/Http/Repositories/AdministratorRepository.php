@@ -1,9 +1,9 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Repositories;
+namespace MediaWebId\Starterkit\Http\Repositories;
 
-use AcitJazz\Starterkit\Models\Admin;
-use AcitJazz\Starterkit\Models\Banner;
+use MediaWebId\Starterkit\Models\Admin;
+use MediaWebId\Starterkit\Models\Banner;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 

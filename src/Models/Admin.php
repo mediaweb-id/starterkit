@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Models;
+namespace MediaWebId\Starterkit\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

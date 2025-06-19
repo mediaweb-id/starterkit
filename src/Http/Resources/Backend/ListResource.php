@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Resources\Backend;
+namespace MediaWebId\Starterkit\Http\Resources\Backend;
 
 use App\Http\Resources\BaseResource;
 use Illuminate\Support\Carbon;

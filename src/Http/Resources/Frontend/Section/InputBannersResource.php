@@ -1,8 +1,8 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Resources\Frontend\Section;
+namespace MediaWebId\Starterkit\Http\Resources\Frontend\Section;
 
-use AcitJazz\Starterkit\Http\Resources\BaseResource;
+use MediaWebId\Starterkit\Http\Resources\BaseResource;
 
 class InputBannersResource extends BaseResource
 {

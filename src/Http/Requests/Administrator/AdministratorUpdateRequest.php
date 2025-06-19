@@ -1,8 +1,8 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Requests\Administrator;
+namespace MediaWebId\Starterkit\Http\Requests\Administrator;
 
-use AcitJazz\Starterkit\Models\Admin;
+use MediaWebId\Starterkit\Models\Admin;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\Rule;

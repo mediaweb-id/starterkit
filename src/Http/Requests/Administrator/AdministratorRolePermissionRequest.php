@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Requests\Administrator;
+namespace MediaWebId\Starterkit\Http\Requests\Administrator;
 
 use Illuminate\Foundation\Http\FormRequest;
 

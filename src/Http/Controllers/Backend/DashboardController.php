@@ -1,9 +1,9 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Controllers\Backend;
+namespace MediaWebId\Starterkit\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use AcitJazz\Starterkit\Models\Admin;
+use MediaWebId\Starterkit\Models\Admin;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 

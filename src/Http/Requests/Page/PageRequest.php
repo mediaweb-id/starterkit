@@ -1,6 +1,6 @@
 <?php
 
-namespace AcitJazz\Starterkit\Http\Requests\Page;
+namespace MediaWebId\Starterkit\Http\Requests\Page;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
