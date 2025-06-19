@@ -1,12 +1,12 @@
 {
-    "name": "acitjazz/starterkit",
+    "name": "mediawebid/starterkit",
     "description": "Starter kit for Laravel Inertia Vue js 3",
     "keywords": [
-        "AcitJazz",
+        "MediaWebId",
         "laravel",
         "starterkit"
     ],
-    "homepage": "https://github.com/acitjazz/starterkit",
+    "homepage": "https://github.com/mediawebid/starterkit",
     "license": "MIT",
     "authors": [
         {
@@ -21,7 +21,7 @@
         "spatie/laravel-package-tools": "^1.16",
         "spatie/laravel-permission": "^6.18",
         "spatie/laravel-sluggable": "^3.7",
-        "acitjazz/main-menu": "^1.0",
+        "mediawebid/main-menu": "^1.0",
         "laravel/sanctum": "^4.0",
         "illuminate/contracts": "^10.0||^11.0||^12.0"
     },
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "AcitJazz\\Starterkit\\": "src/",
-            "AcitJazz\\Starterkit\\Database\\Factories\\": "database/factories/"
+            "MediaWebId\\Starterkit\\": "src/",
+            "MediaWebId\\Starterkit\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AcitJazz\\Starterkit\\Tests\\": "tests/",
+            "MediaWebId\\Starterkit\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AcitJazz\\Starterkit\\StarterkitServiceProvider"
+                "MediaWebId\\Starterkit\\StarterkitServiceProvider"
             ],
             "aliases": {
-                "Starterkit": "AcitJazz\\Starterkit\\Facades\\Starterkit"
+                "Starterkit": "MediaWebId\\Starterkit\\Facades\\Starterkit"
             }
         }
     },
