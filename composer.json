@@ -1,0 +1,75 @@
+{
+    "name": "acitjazz/starterkit",
+    "description": "Starter kit for Laravel Inertia Vue js 3",
+    "keywords": [
+        "AcitJazz",
+        "laravel",
+        "starterkit"
+    ],
+    "homepage": "https://github.com/acitjazz/starterkit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Acit Jazz",
+            "email": "chit.eureka@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "predis/predis": "^3.0",
+        "spatie/laravel-package-tools": "^1.16",
+        "spatie/laravel-permission": "^6.18",
+        "spatie/laravel-sluggable": "^3.7",
+        "acitjazz/main-menu": "^1.0",
+        "laravel/sanctum": "^4.0",
+        "illuminate/contracts": "^10.0||^11.0||^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "nunomaduro/collision": "^8.1.1||^7.10.0",
+        "orchestra/testbench": "^10.0.0||^9.0.0||^8.22.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-arch": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AcitJazz\\Starterkit\\": "src/",
+            "AcitJazz\\Starterkit\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AcitJazz\\Starterkit\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@composer run prepare",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AcitJazz\\Starterkit\\StarterkitServiceProvider"
+            ],
+            "aliases": {
+                "Starterkit": "AcitJazz\\Starterkit\\Facades\\Starterkit"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

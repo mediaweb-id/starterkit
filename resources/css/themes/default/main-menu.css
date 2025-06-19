@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+.navbar {
+  @apply border-b;
+}
+.nav-container {
+}
+
+.nav-wrapper {
+
+}
+
+
+.hamburger-btn {
+  @apply md:hidden text-gray-700 focus:outline-none;
+}
+
+.icon {
+  @apply h-6 w-6;
+}
+
+.desktop-menu {
+}
+
+.mobile-menu {
+  @apply md:hidden mt-4 space-y-2;
+}
+.menu-item{
+  @apply block px-4 py-2 text-gray-800 hover:text-blue-600 w-full text-left font-semibold;
+}
+.sub-menu{
+  @apply absolute left-0 top-full w-48 bg-white shadow-lg rounded-b border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50;
+}
+.sub-menu-item{
+  @apply block px-4 py-2 w-full text-left; 
+}

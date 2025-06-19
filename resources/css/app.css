@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+
+@import "tw-animate-css";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@custom-variant dark (&:is(.dark *));
+
+@source inline("{hover:,focus:,}bg-{white,black,gray-{100,200,300,400,500,600,700,800,900},red-{500,600,700},orange-{400,500,600},amber-{300,400,500},yellow-{300,400,500},lime-{400,500},green-{400,500,600},emerald-{400,500,600},teal-{400,500},cyan-{400,500},blue-{400,500,600},indigo-{400,500,600},violet-{400,500,600},purple-{400,500,600},fuchsia-{400,500},pink-{400,500},rose-{400,500},slate-500,zinc-500,neutral-500,stone-500}");
+@source inline("{hover:,focus:,}text-{white,black,gray-{100,200,300,400,500,600,700,800,900},red-{500,600,700},orange-{400,500,600},amber-{300,400,500},yellow-{300,400,500},lime-{400,500},green-{400,500,600},emerald-{400,500,600},teal-{400,500},cyan-{400,500},blue-{400,500,600},indigo-{400,500,600},violet-{400,500,600},purple-{400,500,600},fuchsia-{400,500},pink-{400,500},rose-{400,500},slate-500,zinc-500,neutral-500,stone-500}");
+
+@theme inline {
+  --font-sans:
+    Instrument Sans, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer utilities {
+  body,
+  html {
+    --font-sans:
+      'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+  }
+}
+input,textarea{
+  @apply py-2 px-3 border border-gray-300 shadow-none;
+}
+a,button{
+  @apply cursor-pointer
+}
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(0 0% 3.9%);
+  --primary: hsl(0 0% 9%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(0 0% 92.1%);
+  --secondary-foreground: hsl(0 0% 9%);
+  --muted: hsl(0 0% 96.1%);
+  --muted-foreground: hsl(0 0% 45.1%);
+  --accent: hsl(0 0% 96.1%);
+  --accent-foreground: hsl(0 0% 9%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(0 0% 92.8%);
+  --input: hsl(0 0% 89.8%);
+  --ring: hsl(0 0% 3.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/*
+  ---break---
+*/
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
